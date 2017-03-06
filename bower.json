@@ -1,0 +1,29 @@
+{
+  "name": "fabianofonsecafreitas",
+  "authors": [
+    "fabianofdf <fabianofdf@gmail.com>"
+  ],
+  "description": "Site pessoal",
+  "main": "assets/scripts/main.js",
+  "keywords": [
+    "fabianofonsecafreitas",
+    "portifolio",
+    "css",
+    "js",
+    "html"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.fabianofonsecafreitas.com.br",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-3.1.1.min": "https://code.jquery.com/jquery-3.1.1.min.js",
+    "rivets.bundled.min": "https://raw.githubusercontent.com/mikeric/rivets/v0.9.4/dist/rivets.bundled.min.js"
+  }
+}

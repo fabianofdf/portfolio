@@ -1,0 +1,47 @@
+﻿*{box-sizing:border-box;}
+html, body{width:100%;height:100%;}
+body{height:100%;margin:0;font-family: 'Roboto', cursive;font-size:14px;color:#222;background-color:#fff;}
+
+main{height:100%;animation-name:load;animation-duration: 2s;}
+main>header{height:100%;display:flex;flex-direction:row;justify-content:center;align-items:center;}
+main>header .info{background-color:#333;padding:50px;}
+main>header .info label{float:left;clear:both;}
+main>header .info .nome{color:#fff;font-size:25px;}
+main>header .info .title{color:#ff0;font-size:18px;}
+main>header .info .email{color:#0ff;font-size:16px;}
+main>header .info .links{float:left;height:24px;clear:both;}
+main>header .info .links a{float:left;width:24px;height:24px;margin:5px 5px 0 0;background-image:url('../images/links.png');background-repeat:no-repeat;}
+main>header .info .links a.linkedin{background-position:-24px 0;}
+main>header .info .links a.twitter{background-position:-48px 0;}
+main>header .info .links a.facebook{background-position:-72px 0;} 
+main>header .info .links a.google_plus{background-position:0 0;}
+main>header .info .links a.github{background-position:-96px 0;}
+main>header .down{position:absolute;bottom:0;padding:10px 15px;font-size:16px;color:#333;animation:arrow .5s infinite alternate;}
+
+main>section{height:100%}
+main>section .item{
+	height:120%;
+	text-align:center;
+	background-position:center top;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	filter:grayscale(1);
+	opacity: .7;
+	transition: filter .5s, opacity .5s;
+}
+main>section .item:hover{filter:grayscale(0);opacity:1;}
+main>section .item .info{float:right;width:100%;padding:40px 70px;font-size: 15px;background-color:#333;color:#fff;}
+main>section .item .info label{float:left;}
+main>section .item .info .nome{font-size:30px;}
+main>section .item .info .ano{padding:3px 0;float:right;color:#ff0;}
+main>section .item .info .tec{float:right;clear:right;color:#0ff;}
+
+@keyframes load{from{opacity:0;}to{opacity:1;}}
+@keyframes arrow{from{bottom:0;}to{bottom:30px;}}
+
+@media only screen and (max-width: 500px) {
+	main>section .item{height:60%;filter:grayscale(0);opacity:1;background-attachment:initial;background-size:contain;background-position:center 80px;}
+	main>section .item .info{padding:20px 30px;}
+	main>section .item .info .nome{font-size:20px;}
+}

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-language" content="pt-br" />
+	<meta http-equiv="cache-control" content="max-age=1209600">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="author" content="Fabiano Fonseca de Freitas" />
+	<meta name="keywords" content="desenvolvedor, front-end, back-end, css, js, html" />	
+	
+	<title>Fabiano Fonseca de Freitas</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+</head>
+<body id="app">
+	<main>
+		<header>
+			<span class="info">
+				<label class="nome">Fabiano Fonseca de Freitas</label>
+				<label class="title">Desenvolvedor WEB</label>
+				<label class="email">fabianofdf@gmail.com</label>
+				<span class="links">
+					<a rv-each-item="links" rv-href="item.url" rv-title="item.name" target="_blank" rv-class="item.cls"></a>	
+				</span>
+			</span>
+			<label class="down">▼</label>
+		</header>
+		<section>
+			<div rv-myid="item.nome" class="item" rv-each-item="trabalhos" rv-bg="item.image">
+				<div class="info">
+					<label class="nome">{item.nome}</label>
+					<label class="ano">{item.ano}</label>
+					<label class="tec">{item.tec}</label>
+				</div>
+			</div>
+		</section>
+	</main>
+<script type="text/javascript" src="assets/components/jquery-3.1.1.min/index.js"></script>
+<script type="text/javascript" src="assets/components/rivets.bundled.min/index.js"></script>
+<script type="text/javascript" src="assets/scripts/main.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91839170-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
